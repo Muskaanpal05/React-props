@@ -1,13 +1,15 @@
 import React from "react";
 import Card from "./Card";
 import contacts from "../contact";
+import Avatar from "./Avatar";
+import { isPropertySignature } from "typescript";
 
 function App() {
     return ( <
         div >
         <
-        h1 className = "heading" > My Contacts < /h1>
-
+        h1 className = "heading" > My Contacts < /h1> <
+        Avatar image = "https://scontent.fslv1-2.fna.fbcdn.net/v/t1.0-9/80858280_2505886906300993_94301946923450368_n.jpg?_nc_cat=100&ccb=2&_nc_sid=e3f864&_nc_ohc=7Cbv6JkLbtEAX_ys9dy&_nc_ht=scontent.fslv1-2.fna&oh=a2163a6bc6ed37682a53e21bb49cf115&oe=5FC8A4FB" / >
         <
         Card name = { contacts[0].name }
         img = { contacts[0].imgURL }
